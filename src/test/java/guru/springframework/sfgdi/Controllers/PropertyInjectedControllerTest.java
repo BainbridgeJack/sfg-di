@@ -1,6 +1,6 @@
 package guru.springframework.sfgdi.Controllers;
 
-import guru.springframework.sfgdi.Services.GreetingServiceImpl;
+import guru.springframework.sfgdi.Services.ConstructorGreetingService;
 
 class PropertyInjectedControllerTest {
 
@@ -9,7 +9,7 @@ class PropertyInjectedControllerTest {
     // Mimic the Spring Context Creation for our test.
     void setUp(){
         propertyInjectedController = new PropertyInjectedController();
-        propertyInjectedController.greetingService = new GreetingServiceImpl();
+        propertyInjectedController.greetingService = new ConstructorGreetingService();
     }
 
     void sayGreeting() {
