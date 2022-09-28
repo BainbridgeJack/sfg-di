@@ -15,11 +15,11 @@ public class SfgDiApplication {
 
 		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args);
 
+		System.out.println("----- My Controller (Primary Bean) -----");
+
 		// Retrieve our newly created bean from the Spring Context:
 		MyController myController = (MyController) ctx.getBean("myController");
-
-		String greeting = myController.sayHello();
-		System.out.printf(greeting + "\n");
+		System.out.println(myController.sayHello());
 
 		System.out.println("----- Property -----");
 
