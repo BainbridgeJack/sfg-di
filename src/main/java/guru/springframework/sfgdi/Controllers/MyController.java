@@ -1,9 +1,11 @@
-package guru.springframework.sfgdi.Controllers;
+package guru.springframework.sfgdi.controllers;
 
-import guru.springframework.sfgdi.Services.GreetingService;
-import org.springframework.beans.factory.annotation.Qualifier;
+import guru.springframework.sfgdi.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
+/**
+ * Created by jt on 12/26/19.
+ */
 @Controller
 public class MyController {
 
@@ -16,5 +18,4 @@ public class MyController {
     public String sayHello(){
         return greetingService.sayGreeting();
     }
-
 }

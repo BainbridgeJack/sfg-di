@@ -1,20 +1,22 @@
-package guru.springframework.sfgdi.Controllers;
+package guru.springframework.sfgdi.controllers;
 
-import guru.springframework.sfgdi.Services.ConstructorGreetingService;
+import guru.springframework.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class SetterInjectedControllerTest {
-    SetterInjectedController setterInjectedController;
+
+    SetterInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        setterInjectedController = new SetterInjectedController();
-        setterInjectedController.setGreetingService(new ConstructorGreetingService());
+        controller = new SetterInjectedController();
+        controller.setGreetingService(new ConstructorGreetingService());
     }
 
     @Test
-    void getGreetingService() {
-        System.out.println(setterInjectedController.getGreeting());
+    void getGreeting() {
+        System.out.println(controller.getGreeting());
+
     }
 }
