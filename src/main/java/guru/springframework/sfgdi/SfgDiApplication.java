@@ -8,7 +8,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 // Override spring context to pull in another base package structure
-@ComponentScan(basePackages = {"com.springframework.pets", "guru.springframework.sfgdi"})
 @SpringBootApplication
 public class SfgDiApplication {
 
